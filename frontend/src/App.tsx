@@ -13,6 +13,7 @@ import PurchaseOrders from "./PurchaseOrders";
 import GoodsReceipts from "./GoodsReceipts";
 import Dashboard from "./Dashboard";
 import OutstandingReport from "./OutstandingReport";
+import RazorpayPayment from "./RazorpayPayment";
 
 type Page =
   | "Dashboard"
@@ -21,7 +22,8 @@ type Page =
   | "Purchase Orders"
   | "Goods Receipts"
   | "Vendor Payments"
-  | "Outstanding Report";
+  | "Outstanding Report"
+  | "Razorpay Test Payment";
 
 const pages: Page[] = [
   "Dashboard",
@@ -31,6 +33,7 @@ const pages: Page[] = [
   "Goods Receipts",
   "Vendor Payments",
   "Outstanding Report",
+  "Razorpay Test Payment",
 ];
 
 const today = () => new Date().toLocaleDateString("en-CA");
@@ -419,6 +422,8 @@ function App() {
   <Dashboard />
   ) : activePage === "Outstanding Report" ? (
   <OutstandingReport />
+  ) : activePage === "Razorpay Test Payment" ? (
+  <RazorpayPayment />
 ) : (
   <div className="content-card placeholder-page">
     <div className="empty-icon">B</div>

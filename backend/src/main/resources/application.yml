@@ -22,3 +22,7 @@ logging:
   level:
     org.springframework.web: INFO
     org.hibernate.SQL: INFO
+
+razorpay:
+  key-id: ${rzp_test_TtMEvNz6LiGXLF}
+  key-secret: ${j5IEDAdTcKaS9A4r9Dt1ly4r}

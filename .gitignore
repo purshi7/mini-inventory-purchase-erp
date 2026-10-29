@@ -1,5 +1,27 @@
-node_modules/
+# Java / Maven
+**/target/
+*.class
+
+# Frontend dependencies and build output
 frontend/node_modules/
-backend/target/
-dist/
+frontend/dist/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+!.env.production.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.production.example
+
+# Logs
+*.log
+
+# IDE / operating system
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
