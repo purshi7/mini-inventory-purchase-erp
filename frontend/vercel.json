@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://mini-inventory-purchase-erp-3.onrender.com/api/:path*"
+      "destination": "https://mini-inventory-purchase-erp-4.onrender.com/api/:path*"
     }
   ]
 }
